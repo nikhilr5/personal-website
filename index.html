@@ -57,7 +57,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("https://o9k3hyw0r1.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
+            fetch("https://y34eze9yk4.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
@@ -67,10 +67,12 @@
 <body>
     <h1>TO THE POWER OF MATH!</h1>
 	<form>
-        <label>Base number:</label>
-        <input type="text" id="base">
-        <label>...to the power of:</label>
+        <label>email</label>
+        <input type="text" id="email">
+        <label>subject</label>
         <input type="text" id="exponent">
+        <label>message</label>
+        <input type="text" id="message">
         <!-- set button onClick method to call function we defined passing input values as parameters -->
         <button type="button" onclick="callAPI(document.getElementById('base').value,document.getElementById('exponent').value)">CALCULATE</button>
     </form>
