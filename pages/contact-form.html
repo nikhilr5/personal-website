@@ -8,18 +8,29 @@
 </head>
 <body>
     <div>
-    <h1>Nikhil Richard Email Form</h1>
+    <div id="notice_h1"><h1>Fill Out the Form To Contact Nikhil!</h1></div>
     <nav>
-        <div class="logo">
-            <img src="images/profile-pic.png">
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/contact-form.html">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="wrapper">
+                    <div class="sidebar">
+                        <div class="profile">
+                            <img src="../images/profile-pic.png">
+                            <h3>Nikhil Richard</h3>
+                            <p>Student</p>
+                        </div>
+                        <nav>
+                                <div class="nav-links">
+                                    <ul>
+                                        <li><a href="../index.html">Home</a></li>
+                                        <li><a href="../pages/contact-form.html">Contact Me</a></li>
+                                        <li><a href="../https://github.com/nikhilr5">Github</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        
+            </div>
+    </nav>]
+    <div id="wrapper2">
 	<form>
 
         <input type="text" id="email" placeholder="EMAIL">
@@ -28,6 +39,7 @@
         
         <!-- set button onClick method to call function we defined passing input values as parameters -->
         <button id="submit" type="button" onclick="callAPI(document.getElementById('email').value,document.getElementById('subject').value, document.getElementById('message').value)">SEND</button>
+    </div>
     </form>
     </div>
 </body>
